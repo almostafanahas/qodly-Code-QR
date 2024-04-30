@@ -14,15 +14,18 @@ const commonSettings: TSetting[] = [
     type: ESetting.NUMBER_FIELD,
     defaultValue: 128,
   },
+];
+
+const colorSettings: TSetting[] = [
   {
     key: 'QrfgColor',
-    label: 'QR Font Color',
+    label: 'Font',
     type: ESetting.COLOR_PICKER,
     defaultValue: "#000000",
   },
   {
     key: 'QrbgColor',
-    label: 'QR Background Color',
+    label: 'Background',
     type: ESetting.COLOR_PICKER,
     defaultValue: "#FFFFFF",
   },
@@ -34,6 +37,12 @@ const Settings: TSetting[] = [
     label: 'Properties',
     type: ESetting.GROUP,
     components: commonSettings,
+  },
+  {
+    key: 'qrColors',
+    label: 'QR Colors',
+    type: ESetting.GROUP,
+    components: colorSettings,
   },
   ...DEFAULT_SETTINGS,
 ];
