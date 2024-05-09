@@ -12,7 +12,7 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |   Default Link   |   `value`   |   string   |   -   |   A string of characters or a URL as a default value   |
 |   QR Size   |   `Qrsize`   |   number   |   128   |   A proportional size of the QR Code   |
-|   Level   |   `level`   |   string   |   L   |   QR Code is known for its robustness in the physical world. This is due to something called ‘error correction’ - a feature specific to QR Code that ensures it is scannable, even if there has been some form of physical damage to the code. There are four levels of error correction to choose from, depending on the damage that the user expects from the QR Code to sustain: L (7% of data can be restored), M: (15% of data can be restored), (Q: 25% of data can be restored) and H (30% of data can be restored)   |
+|   Level   |   `level`   |   string   |   L   |   QR Code is known for its robustness in the physical world. This is due to something called ‘error correction’. It's a feature specific to the QR Code which ensures that it is scannable, even if there has been some form of physical damage to the code. There are four levels of error correction to choose from, depending on the damage that the user expects from the QR Code to sustain: **L** (7% of data can be restored), **M** (15% of data can be restored), **Q** (25% of data can be restored) and **H** (30% of data can be restored)   |
 |   Margin   |   `includeMargin`   |   boolean   |   false   |   If "true", it displays a margin inside the square   |
 
 ## QR Colors
