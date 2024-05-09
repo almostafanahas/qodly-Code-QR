@@ -1,7 +1,26 @@
 # Overview
 
-This project allows Qodly Studio Devs to create their own components using the Standalone editor. and leveraging the pwer of the React library,
-This document goal is to help developers learn about the API used to implement their first Qodly custom component
+Convert a string of characters or a URL (Uniform Resource Locator) to a two-dimensional barcode by using the QR Code (Quick Response Code). This component consists of modules appearing in a square. It allows the user to do a quick decoding via a barcode reader, smartphone, etc.
+
+## Qodly-Code-QR
+
+![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/a70890bb-bd5b-4bd4-ab32-fd4d7f04cae0)
+
+## Properties
+
+|   Name   |   Attribute   |   Type   |   Default   |   Description   |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|   Default Link   |   `value`   |   string   |   -   |   |
+|   QR Size   |   `Qrsize`   |   number   |   128   |   |
+|   Level   |   `level`   |   string   |   L   |   |
+|   Margin   |   `includeMargin`   |   boolean   |   false   |   |
+
+## QR Colors
+
+|   Name   |   Attribute   |   Type   |   Default   |   Description   |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|   Font   |   `QrfgColor`   |   string   |   #000000   |   |
+|   Background   |   `QrbgColor`   |   string   |   #FFFFFF   |   |
 
 ## Getting Started
 
