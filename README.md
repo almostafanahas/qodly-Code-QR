@@ -10,17 +10,22 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 
 |   Name   |   Attribute   |   Type   |   Default   |   Description   |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|   Default Link   |   `value`   |   string   |   -   |   |
-|   QR Size   |   `Qrsize`   |   number   |   128   |   |
-|   Level   |   `level`   |   string   |   L   |   |
-|   Margin   |   `includeMargin`   |   boolean   |   false   |   |
+|   Default Link   |   `value`   |   string   |   -   |   A string of characters or a URL as a default value   |
+|   QR Size   |   `Qrsize`   |   number   |   128   |   A proportional size of the QR Code   |
+|   Level   |   `level`   |   string   |   L   |   QR Code is known for its robustness in the physical world. This is due to something called ‘error correction’ - a feature specific to QR Code that ensures it is scannable, even if there has been some form of physical damage to the code. There are four levels of error correction to choose from, depending on the damage you expect your QR Code to sustain: L (7% of data can be restored), M: (15% of data can be restored), (Q: 25% of data can be restored) and H (30% of data can be restored)   |
+|   Margin   |   `includeMargin`   |   boolean   |   false   |   If "true", it displays a margin inside the square   |
 
 ## QR Colors
 
 |   Name   |   Attribute   |   Type   |   Default   |   Description   |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|   Font   |   `QrfgColor`   |   string   |   #000000   |   |
-|   Background   |   `QrbgColor`   |   string   |   #FFFFFF   |   |
+|   Font   |   `QrfgColor`   |   string   |   #000000   |   The color of the modules   |
+|   Background   |   `QrbgColor`   |   string   |   #FFFFFF   |   The backgroud color of the QR Code (the square color) |
+
+## DataSource
+|   Name   |   Type   |   Required   |   Description   |
+| ------------- | ------------- | ------------- | ------------- |
+|   datasource   |   string   |   Yes   |   The color of the modules   |
 
 ## Getting Started
 
