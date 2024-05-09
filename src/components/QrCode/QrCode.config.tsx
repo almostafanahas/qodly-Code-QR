@@ -60,7 +60,7 @@ export default {
     QrfgColor: '#000000',
     QrbgColor: '#FFFFFF',
     level: 'L',
-    includeMargin: true,
+    includeMargin: false,
     iterableChild: true,
   },
 } as T4DComponentConfig<IQrCodeProps>;
