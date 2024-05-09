@@ -1,6 +1,6 @@
 # Overview
 
-Convert a string of characters or a URL (Uniform Resource Locator) to a two-dimensional barcode by using the QR Code (Quick Response Code). This component consists of modules appearing in a square. It allows the user to do a quick decoding via a barcode reader, smartphone, etc.
+Convert a string of characters or a URL (Uniform Resource Locator) to a two-dimensional barcode by using the QR Code (Quick Response Code) for Qodly Studio. This component consists of modules appearing in a square. It allows the user to do a quick decoding via a barcode reader, smartphone, etc.
 
 ## Qodly-Code-QR
 
@@ -25,4 +25,4 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 ## DataSource
 |   Name   |   Type   |   Required   |   Description   |
 | ------------- | ------------- | ------------- | ------------- |
-|   datasource   |   string   |   Yes   |   |
+|   datasource   |   string   |   Yes   |   Will contain the string of characters or a URL that will be converted to a QR Code  |
