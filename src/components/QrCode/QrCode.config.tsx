@@ -59,13 +59,17 @@ export default {
     Qrsize: 128,
     QrfgColor: '#000000',
     QrbgColor: '#FFFFFF',
+    level: 'L',
+    includeMargin: true,
     iterableChild: true,
   },
 } as T4DComponentConfig<IQrCodeProps>;
 
 export interface IQrCodeProps extends webforms.ComponentProps {
   name: string;
+  level: string;
   Qrsize: number;
   QrfgColor: string;
   QrbgColor: string;
+  includeMargin: boolean;
 }

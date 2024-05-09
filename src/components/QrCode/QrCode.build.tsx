@@ -7,12 +7,14 @@ import { IQrCodeProps } from './QrCode.config';
 
 const QrCode: FC<IQrCodeProps> = ({
   name,
+  level,
   style,
   className,
   classNames = [],
   QrfgColor,
   QrbgColor,
   Qrsize,
+  includeMargin,
 }) => {
   const {
     connectors: { connect },
@@ -22,7 +24,7 @@ const QrCode: FC<IQrCodeProps> = ({
 
   return (
     <div ref={connect} style={style} className={cn(className, classNames)}>
-      <QRCodeSVG value={name} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} />
+      <QRCodeSVG value={name} level={level} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} includeMargin={includeMargin} />
     </div>
   );
 };

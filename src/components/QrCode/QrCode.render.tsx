@@ -7,12 +7,14 @@ import { IQrCodeProps } from './QrCode.config';
 
 const QrCode: FC<IQrCodeProps> = ({
   name,
+  level,
   style,
   className,
   classNames = [],
   QrfgColor,
   QrbgColor,
   Qrsize,
+  includeMargin,
 }) => {
   const { connect } = useRenderer();
   const [value, setValue] = useState(() => name);
@@ -31,6 +33,7 @@ const QrCode: FC<IQrCodeProps> = ({
     listener();
 
     console.log(value);
+    console.log(level);
 
     ds.addListener('changed', listener);
 
@@ -42,7 +45,7 @@ const QrCode: FC<IQrCodeProps> = ({
 
   return (
     <div ref={connect} style={style} className={cn(className, classNames)}>
-      <QRCodeSVG value={value || name} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} />
+      <QRCodeSVG value={value || name} level={level} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} includeMargin={includeMargin}/>
     </div>
   );
 };

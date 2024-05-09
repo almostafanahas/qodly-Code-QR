@@ -14,6 +14,35 @@ const commonSettings: TSetting[] = [
     type: ESetting.NUMBER_FIELD,
     defaultValue: 128,
   },
+  {
+    key: 'level',
+    label: 'Level',
+    type: ESetting.SELECT,
+    defaultValue: 'L',
+    options:[
+      {
+        label: "L",
+        value: "L"
+      },
+      {
+        label: "M",
+        value: "M"
+      },
+      {
+        label: "Q",
+        value: "Q"
+      },
+      {
+        label: "H",
+        value: "H"
+      },
+    ]
+  },
+  {
+    key: 'includeMargin',
+    label: 'Margin',
+    type: ESetting.CHECKBOX,
+  },
 ];
 
 const colorSettings: TSetting[] = [
