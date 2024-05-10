@@ -72,4 +72,8 @@ export interface IQrCodeProps extends webforms.ComponentProps {
   QrfgColor: string;
   QrbgColor: string;
   includeMargin: boolean;
+  src: string;
+  heightImage: number;
+  widthImage: number;
+  evacate: boolean;
 }

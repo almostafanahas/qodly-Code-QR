@@ -15,16 +15,28 @@ const QrCode: FC<IQrCodeProps> = ({
   QrbgColor,
   Qrsize,
   includeMargin,
+  src,
+  heightImage,
+  widthImage,
+  evacate,
 }) => {
   const {
     connectors: { connect },
   } = useEnhancedNode();
 
-  console.log(Qrsize);
-
+  // to be edited: imageSettings
   return (
     <div ref={connect} style={style} className={cn(className, classNames)}>
-      <QRCodeSVG value={name} level={level} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} includeMargin={includeMargin} />
+      <QRCodeSVG value={name}
+      imageSettings={{
+        src: `${src}`,
+        x: undefined,
+        y: undefined,
+        height: heightImage,
+        width: widthImage,
+        excavate: evacate,
+      }}
+      level={level} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} includeMargin={includeMargin} />
     </div>
   );
 };

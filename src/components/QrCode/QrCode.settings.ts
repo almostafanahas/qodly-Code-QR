@@ -60,6 +60,32 @@ const colorSettings: TSetting[] = [
   },
 ];
 
+const imageSettings: TSetting[] = [
+  {
+    key: 'src',
+    label: 'Image Source',
+    type: ESetting.TEXT_FIELD,
+    defaultValue: '',
+  },
+  {
+    key: 'heightImage',
+    label: 'Height',
+    type: ESetting.NUMBER_FIELD,
+    defaultValue: 20,
+  },
+  {
+    key: 'widthImage',
+    label: 'Width',
+    type: ESetting.NUMBER_FIELD,
+    defaultValue: 20,
+  },
+  {
+    key: 'evacate',
+    label: 'Evacate',
+    type: ESetting.CHECKBOX,
+  },
+];
+
 const Settings: TSetting[] = [
   {
     key: 'properties',
@@ -72,6 +98,12 @@ const Settings: TSetting[] = [
     label: 'QR Colors',
     type: ESetting.GROUP,
     components: colorSettings,
+  },
+  {
+    key: 'imageSettings',
+    label: 'Image Settings',
+    type: ESetting.GROUP,
+    components: imageSettings,
   },
   ...DEFAULT_SETTINGS,
 ];
