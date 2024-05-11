@@ -62,7 +62,7 @@ export default {
     level: 'L',
     includeMargin: false,
     iterableChild: true,
-    evacate: true,
+    evacate: false,
     heightImage: 20,
     widthImage: 20,
   },
