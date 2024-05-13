@@ -36,9 +36,6 @@ const QrCode: FC<IQrCodeProps> = ({
 
     listener();
 
-    console.log(value);
-    console.log(level);
-
     ds.addListener('changed', listener);
 
     return () => {
@@ -49,7 +46,7 @@ const QrCode: FC<IQrCodeProps> = ({
 
   return (
     <div ref={connect} style={style} className={cn(className, classNames)}>
-      <QRCodeSVG value={name}
+      <QRCodeSVG value={value}
       imageSettings={{
         src: `${src}`,
         x: undefined,
