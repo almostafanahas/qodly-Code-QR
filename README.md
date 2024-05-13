@@ -36,8 +36,8 @@ There is an optional property to add an image in the middle of the QR Code. It i
 |   Image Source   |   `src`   |   string   |   -   |   The link of the image to be displayed in the middle of the QR Code   |
 |   Height   |   `height`   |   number   |   20   |   The height of the image   |
 |   Width   |   `width`   |   number   |   20   |   The width of the image   |
-|   Evacate   |   `evacate`   |   boolean   |   false   |  If the value of this attribute is true, it digs the foreground of the image to nearest whole module, it shows a padding all around the image  |
+|   Excavate   |   `excavate`   |   boolean   |   false   |  If the value of this attribute is true, it digs the foreground of the image to nearest whole module, it shows a padding all around the image  |
 
-The example below is a QR Code for the website of Qodly, and in the middle we can see the logo of Qodly displayed with a padding in its perimeter (because the value of `evacate` is true):
+The example below is a QR Code for the website of Qodly, and in the middle we can see the logo of Qodly displayed with a padding in its perimeter (because the value of `excavate` is true):
 
 ![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/23ec2437-b40b-4597-8f76-da17271b7fa1)
