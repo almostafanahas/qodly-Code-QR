@@ -40,4 +40,4 @@ There is an optional property to add an image in the middle of the QR Code. It i
 
 The example below is a QR Code for the website of Qodly, and in the middle we can see the logo of Qodly displayed with a padding in its perimeter (because the value of `excavate` is true):
 
-![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/a03caab8-d18b-4f71-b07b-1dc6fe2228bf)
+![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/72ec31ae-886c-424f-bef2-847a03f50854)
