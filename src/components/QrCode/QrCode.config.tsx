@@ -62,7 +62,7 @@ export default {
     level: 'L',
     includeMargin: false,
     iterableChild: true,
-    evacate: false,
+    excavate: false,
     heightImage: 20,
     widthImage: 20,
   },
@@ -78,5 +78,5 @@ export interface IQrCodeProps extends webforms.ComponentProps {
   src: string;
   heightImage: number;
   widthImage: number;
-  evacate: boolean;
+  excavate: boolean;
 }

@@ -18,7 +18,7 @@ const QrCode: FC<IQrCodeProps> = ({
   src,
   heightImage,
   widthImage,
-  evacate,
+  excavate,
 }) => {
   const {
     connectors: { connect },
@@ -34,7 +34,7 @@ const QrCode: FC<IQrCodeProps> = ({
         y: undefined,
         height: heightImage,
         width: widthImage,
-        excavate: evacate,
+        excavate: excavate,
       }}
       level={level} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} includeMargin={includeMargin} />
     </div>

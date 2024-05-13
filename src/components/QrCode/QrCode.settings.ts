@@ -80,8 +80,8 @@ const imageSettings: TSetting[] = [
     defaultValue: 20,
   },
   {
-    key: 'evacate',
-    label: 'Evacate',
+    key: 'excavate',
+    label: 'Excavate',
     type: ESetting.CHECKBOX,
   },
 ];

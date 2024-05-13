@@ -18,7 +18,7 @@ const QrCode: FC<IQrCodeProps> = ({
   src,
   heightImage,
   widthImage,
-  evacate,
+  excavate,
 }) => {
   const { connect } = useRenderer();
   const [value, setValue] = useState(() => name);
@@ -56,7 +56,7 @@ const QrCode: FC<IQrCodeProps> = ({
         y: undefined,
         height: heightImage,
         width: widthImage,
-        excavate: evacate,
+        excavate: excavate,
       }}
       level={level} fgColor={QrfgColor} bgColor={QrbgColor} size={Qrsize} includeMargin={includeMargin}/>
     </div>
