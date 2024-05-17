@@ -4,7 +4,7 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 
 ## Qodly-Code-QR
 
-![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/a70890bb-bd5b-4bd4-ab32-fd4d7f04cae0)
+![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/9f685832-661a-4604-b656-7033fde968dc)
 
 ## Properties
 
@@ -40,4 +40,4 @@ There is an optional property to add an image in the middle of the QR Code. It i
 
 The example below is a QR Code for the website of Qodly, and in the middle we can see the logo of Qodly displayed with a padding in its perimeter (because the value of `excavate` is true):
 
-![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/23ec2437-b40b-4597-8f76-da17271b7fa1)
+![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/72ec31ae-886c-424f-bef2-847a03f50854)
