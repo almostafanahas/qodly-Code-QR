@@ -1,4 +1,4 @@
-import { ESetting, TSetting } from '@ws-ui/webform-editor';
+import { DEFAULT_SETTINGS, ESetting, TSetting } from '@ws-ui/webform-editor';
 import { BASIC_SETTINGS, load } from '@ws-ui/webform-editor';
 
 const commonSettings: TSetting[] = [
@@ -43,28 +43,7 @@ const commonSettings: TSetting[] = [
     label: 'Margin',
     type: ESetting.CHECKBOX,
   },
-  {
-    key: 'cssClass',
-    label: 'CSS Class',
-    type: ESetting.CSSCLASS_SELECTOR,
-  },
 ];
-
-const layoutSettings: TSetting[] = [
-  {
-    key: 'layout',
-    label: 'Layout',
-    type: ESetting.LAYOUT,
-  },
-]
-
-const borderSettings: TSetting[] = [
-  {
-    key: 'qrBorders',
-    label: 'QrBorders',
-    type: ESetting.BORDERS,
-  },
-]
 
 const colorSettings: TSetting[] = [
   {
@@ -78,6 +57,14 @@ const colorSettings: TSetting[] = [
     label: 'Background',
     type: ESetting.COLOR_PICKER,
     defaultValue: "#FFFFFF",
+  },
+];
+
+const cssSettings: TSetting[] = [
+  {
+    key: 'cssClass',
+    label: 'CSS Class',
+    type: ESetting.CSSCLASS_SELECTOR,
   },
 ];
 
@@ -107,6 +94,22 @@ const imageSettings: TSetting[] = [
   },
 ];
 
+const layoutSettings: TSetting[] = [
+  {
+    key: 'layout',
+    label: 'Layout',
+    type: ESetting.LAYOUT,
+  },
+]
+
+const borderSettings: TSetting[] = [
+  {
+    key: 'qrBorders',
+    label: 'QrBorders',
+    type: ESetting.BORDERS,
+  },
+]
+
 const Settings: TSetting[] = [
   {
     key: 'properties',
@@ -114,17 +117,20 @@ const Settings: TSetting[] = [
     type: ESetting.GROUP,
     components: commonSettings,
   },
+  ...load(DEFAULT_SETTINGS).filter(
+    'appearance',
+    'style',
+    'color',
+    'background',
+    'font',
+    'borders',
+    'borderRadius',
+  ),
   {
-    key: 'layout',
-    label: 'Layout',
+    key: 'css',
+    label: 'CSS',
     type: ESetting.GROUP,
-    components: layoutSettings,
-  },
-  {
-    key: 'borders',
-    label: 'Borders',
-    type: ESetting.GROUP,
-    components: borderSettings,
+    components: cssSettings,
   },
   {
     key: 'qrColors',
@@ -137,6 +143,18 @@ const Settings: TSetting[] = [
     label: 'Image Settings',
     type: ESetting.GROUP,
     components: imageSettings,
+  },
+  {
+    key: 'layout',
+    label: 'Layout',
+    type: ESetting.GROUP,
+    components: layoutSettings,
+  },
+  {
+    key: 'borders',
+    label: 'Borders',
+    type: ESetting.GROUP,
+    components: borderSettings,
   },
 ];
 
