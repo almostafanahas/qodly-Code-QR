@@ -3,8 +3,8 @@ import { BASIC_SETTINGS, DEFAULT_SETTINGS, load } from '@ws-ui/webform-editor';
 
 const commonSettings: TSetting[] = [
   {
-    key: 'name',
-    label: 'Default Link',
+    key: 'link',
+    label: 'Link',
     type: ESetting.TEXT_FIELD,
     defaultValue: '',
   },

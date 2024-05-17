@@ -6,7 +6,7 @@ import { QRCodeSVG } from 'qrcode.react';
 import { IQrCodeProps } from './QrCode.config';
 
 const QrCode: FC<IQrCodeProps> = ({
-  name,
+  link,
   level,
   style,
   className,
@@ -21,7 +21,7 @@ const QrCode: FC<IQrCodeProps> = ({
   excavate,
 }) => {
   const { connect } = useRenderer();
-  const [value, setValue] = useState(() => name);
+  const [value, setValue] = useState(() => link);
   const {
     sources: { datasource: ds },
   } = useSources();
@@ -31,7 +31,7 @@ const QrCode: FC<IQrCodeProps> = ({
 
     const listener = async (/* event */) => {
       const v = await ds.getValue<string>();
-      setValue(v || name);
+      setValue(v || link);
     };
 
     listener();

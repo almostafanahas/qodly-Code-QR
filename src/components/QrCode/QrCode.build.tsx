@@ -6,7 +6,7 @@ import { QRCodeSVG } from 'qrcode.react';
 import { IQrCodeProps } from './QrCode.config';
 
 const QrCode: FC<IQrCodeProps> = ({
-  name,
+  link,
   level,
   style,
   className,
@@ -24,10 +24,9 @@ const QrCode: FC<IQrCodeProps> = ({
     connectors: { connect },
   } = useEnhancedNode();
 
-  // to be edited: imageSettings
   return (
     <div ref={connect} style={style} className={cn(className, classNames)}>
-      <QRCodeSVG value={name}
+      <QRCodeSVG value={link}
       imageSettings={{
         src: `${src}`,
         x: undefined,
