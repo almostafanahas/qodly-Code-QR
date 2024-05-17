@@ -10,7 +10,7 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 
 |   Name   |   Attribute   |   Type   |   Default   |   Description   |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|   Default Link   |   `value`   |   string   |   -   |   A string of characters or a URL as a default value   |
+|   Link   |   `value`   |   string   |   -   |   A string of characters or a URL as a default value   |
 |   QR Size   |   `Qrsize`   |   number   |   128   |   A proportional size of the QR Code   |
 |   Level   |   `level`   |   string   |   L   |   QR Code is known for its robustness in the physical world. This is due to something called "Error Correction". It's a feature specific to the QR Code which ensures that it is scannable, even if there has been some form of physical damage to the code. There are four levels of error correction to choose from, depending on the damage that the user expects from the QR Code to sustain: **L** (7% of data can be restored), **M** (15% of data can be restored), **Q** (25% of data can be restored) and **H** (30% of data can be restored)   |
 |   Margin   |   `includeMargin`   |   boolean   |   false   |   If "true", it displays a margin inside the square   |
@@ -36,8 +36,8 @@ There is an optional property to add an image in the middle of the QR Code. It i
 |   Image Source   |   `src`   |   string   |   -   |   The link of the image to be displayed in the middle of the QR Code   |
 |   Height   |   `height`   |   number   |   20   |   The height of the image   |
 |   Width   |   `width`   |   number   |   20   |   The width of the image   |
-|   Excavate   |   `excavate`   |   boolean   |   false   |  If the value of this attribute is true, it digs the foreground of the image to nearest whole module, it shows a padding all around the image  |
+|   Excavate   |   `excavate`   |   boolean   |   false   |  If the value of this attribute is "true", it digs the foreground of the image to nearest whole module, it shows a blank square as a background of the image  |
 
-The example below is a QR Code for the website of Qodly, and in the middle we can see the logo of Qodly displayed with a padding in its perimeter (because the value of `excavate` is true):
+The example below is a QR Code for the website of [Qodly](https://www.qodly.com/), and in the middle we can see the logo of Qodly displayed with a blank square (because the value of `excavate` is "true"):
 
 ![image](https://github.com/almostafanahas/qodly-Code-QR/assets/66624970/72ec31ae-886c-424f-bef2-847a03f50854)
