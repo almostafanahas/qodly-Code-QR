@@ -25,7 +25,7 @@ const QrCode: FC<IQrCodeProps> = ({
   } = useEnhancedNode();
 
   return (
-    <div ref={connect} style={style} className={cn(className, classNames)}>
+    <div ref={connect} style={style} className={cn(className, classNames, "w-fit")}>
       <QRCodeSVG value={link}
       imageSettings={{
         src: `${src}`,

@@ -1,5 +1,5 @@
 import { ESetting, TSetting } from '@ws-ui/webform-editor';
-import { BASIC_SETTINGS, DEFAULT_SETTINGS, load } from '@ws-ui/webform-editor';
+import { BASIC_SETTINGS, load } from '@ws-ui/webform-editor';
 
 const commonSettings: TSetting[] = [
   {
@@ -43,7 +43,28 @@ const commonSettings: TSetting[] = [
     label: 'Margin',
     type: ESetting.CHECKBOX,
   },
+  {
+    key: 'cssClass',
+    label: 'CSS Class',
+    type: ESetting.CSSCLASS_SELECTOR,
+  },
 ];
+
+const layoutSettings: TSetting[] = [
+  {
+    key: 'layout',
+    label: 'Layout',
+    type: ESetting.LAYOUT,
+  },
+]
+
+const borderSettings: TSetting[] = [
+  {
+    key: 'qrBorders',
+    label: 'QrBorders',
+    type: ESetting.BORDERS,
+  },
+]
 
 const colorSettings: TSetting[] = [
   {
@@ -94,6 +115,18 @@ const Settings: TSetting[] = [
     components: commonSettings,
   },
   {
+    key: 'layout',
+    label: 'Layout',
+    type: ESetting.GROUP,
+    components: layoutSettings,
+  },
+  {
+    key: 'borders',
+    label: 'Borders',
+    type: ESetting.GROUP,
+    components: borderSettings,
+  },
+  {
     key: 'qrColors',
     label: 'QR Colors',
     type: ESetting.GROUP,
@@ -105,7 +138,6 @@ const Settings: TSetting[] = [
     type: ESetting.GROUP,
     components: imageSettings,
   },
-  ...DEFAULT_SETTINGS,
 ];
 
 export const BasicSettings: TSetting[] = [
