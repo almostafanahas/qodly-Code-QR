@@ -22,7 +22,7 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 |   Font   |   `QrfgColor`   |   string   |   #000000   |   The color of the modules   |
 |   Background   |   `QrbgColor`   |   string   |   #FFFFFF   |   The backgroud color of the QR Code (the square color) |
 
-## DataSource
+## Qodly Source
 
 |   Name   |   Type   |   Required   |   Description   |
 | ------------- | ------------- | ------------- | ------------- |
