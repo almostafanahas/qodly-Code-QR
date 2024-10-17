@@ -26,7 +26,7 @@ Convert a string of characters or a URL (Uniform Resource Locator) to a two-dime
 
 |   Name   |   Type   |   Required   |   Description   |
 | ------------- | ------------- | ------------- | ------------- |
-|   datasource   |   string   |   Yes   |   Will contain the string of characters or a URL that will be converted to a QR Code  |
+|   qodlysource   |   string   |   Yes   |   Will contain the string of characters or a URL that will be converted to a QR Code  |
 
 ## Image Settings
 
