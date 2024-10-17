@@ -2,7 +2,7 @@
   "app_id": "qodly_7ce7053161c64406decf",
   "name": "qodly-qrcode",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.2",
   "type": "module",
   "author": {
     "name": "Qodly Team",
@@ -17,16 +17,13 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,mjs,json,jsx,html,css}\""
   },
   "dependencies": {
-    "@ws-ui/craftjs-core": "^0.2.5",
-    "@ws-ui/craftjs-layers": "^0.2.2",
-    "@ws-ui/craftjs-utils": "^0.2.1",
-    "@ws-ui/webform-editor": "0.2.25",
+    "@ws-ui/webform-editor": "0.3.28",
     "qrcode.react": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@qodly/cli": "^0.1.44",
+    "@qodly/cli": "^0.2.15",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
