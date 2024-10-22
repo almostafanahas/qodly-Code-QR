@@ -2,7 +2,7 @@
   "app_id": "qodly_7ce7053161c64406decf",
   "name": "qodly-qrcode",
   "private": true,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "author": {
     "name": "Qodly Team",
